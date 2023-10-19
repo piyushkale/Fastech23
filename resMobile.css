@@ -1,0 +1,75 @@
+@media screen and (max-width: 480px){
+    #headerId{
+        flex-flow: column;
+        align-items: center;
+    }
+#oneDiv{
+    position: relative;
+    right: 2rem;
+}
+#oneDiv img{
+    display: none;
+}
+    .jAnimation{
+        font-size: 4rem;
+    }
+    #js{
+        color: #93cdd4;
+        font-size: x-large;
+    }
+    #jsTxt{
+        letter-spacing: 0px;
+        font-size: larger;
+        color: black;
+        font-weight: 600;
+    }
+    #ulId{
+        position: absolute;
+        background-color: #0f0f0f;
+        flex-flow: column;
+        height: 35vh;
+        top: 4.4rem;
+        left: -20rem;
+        border-radius: 0 0 31px 0;
+        box-shadow: 0 -16px 55px -18px #3c8c96 inset;
+        width: 70%;
+        transition: all 0.2s ease;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2rem;
+        padding-top: 3rem;
+    }
+#menuIcon{
+    display: block;
+    width: 2rem;
+    position: absolute;
+    right: 14px;
+}
+
+#asmblPC{
+    background-image: url(gamingPcRes.jpg);
+    background-size: cover;
+    box-shadow: 0px -42px 54px -20px #0b607c inset;
+height: 70vh;
+}
+#homeAnimationId a button{
+    font-size: 1.5rem;
+}
+#textAnimation{
+    font-size: 2.3rem;
+    display: inline-block;
+    width: 10rem;
+}
+    
+.itemsContainer img {
+    width: 21rem;
+    height: 16.5rem;
+}
+.itemsContainer span{
+    font-size: larger;
+}
+.itemsContainer a{
+    font-size: 1.2rem;
+}
+    
+}

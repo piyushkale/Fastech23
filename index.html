@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resMobile.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Homepage</title>
+</head>
+<body>
+    <header id="headerId">
+        <div class="twoDiv" id="oneDiv">
+            <img src="dummy.png" id="iconMain">
+    
+        <span class="jAnimation">F</span><span id="js">ASTECH</span><span style="letter-spacing: 1px;" id="jsTxt"> &nbsp&nbspcomputers</span>
+    </div>
+
+        <div class="twoDiv">
+            <ul id="ulId">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Track order</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul></div>
+        <img src="menu.svg" alt="Menu Icon" id="menuIcon">
+    </header>
+    <section id="homeAnimationId">
+        <div id="asmblPC">
+            <div id="asmblDiv">
+        <h1>Get the <span style="font-size: 2.5rem;
+            color: #b04b46;">best</span><br> assembled <span id="textAnimation">GAMING</span><br> PC for your budget</h1>
+    </div>
+<a href="#"><button>Continue</button></a>
+</div>
+    
+   
+    </section>
+
+    <h2 class="sectionTitle">Accessories</h2>
+    <section id="itemSection">
+        <!-- <div class="itemsContainer">
+    
+     <img src="items.jpg" alt="item image">
+     <span>Lorem, ipsum dolor.</span>
+    <button>Buy</button>
+    </div> -->
+    </section>
+    
+    <script>
+        function addItems (imgName,title,link) {
+            
+        let items=document.createElement('div')
+        items.setAttribute('class','itemsContainer')        
+        items.innerHTML=`
+            <img src='${imgName}' alt='item image'>
+            <span>${title}</span>
+            <a href='${link}'>VIEW</a>
+            `
+        document.querySelector('#itemSection').appendChild(items)
+        }
+        addItems('keyboard.jpg','Keyboards','https://www.google.com/')
+        addItems('mouse.jpg','Mouse','https://www.google.com/')
+        addItems('webcam.jpg','Webcam','https://www.google.com/')
+        addItems('ssd.jpg','SSD, usb drives','https://www.google.com/')
+        addItems('headphones.jpg','Headsets & Earphones','https://www.google.com/')
+        addItems('chair.jpg','Gaming Chair','https://www.google.com/')
+        addItems('monitor.jpg','Monitor','https://www.google.com/')
+        addItems('cpu.jpg','Assembled CPU','https://www.google.com/')
+
+        const menubtn=document.querySelector('#menuIcon')
+        menubtn.addEventListener('click',()=>{
+            if (document.querySelector('#ulId').style.display=='') {
+                const menulist=document.querySelector('#ulId')
+                    menulist.style.display='flex'
+                    menulist.style.left='0px'
+            } else {
+                const menulist=document.querySelector('#ulId')
+                    menulist.style.display=''
+                    menulist.style.left='-20rem'
+            }
+                                
+        })
+        console.log(document.querySelector('#ulId').style.display);
+    </script>
+</body>
+</html>
